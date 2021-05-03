@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="QuarkFit.exe" version="1.0.0.0" publicKeyToken="169890dc1dd38335" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="QuarkFit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="QuarkFit.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto do UAC
+          Para alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó
+          requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Para utilizar a Virtualização de Arquivos e Registro para manter a compatibilidade com versões anteriores,
+         exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.ConnectionInfo.dll" size="148504">
+      <assemblyIdentity name="Microsoft.SqlServer.ConnectionInfo" version="10.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Dd6pTbJBUCYJQ6X1pR9nL5flwzcBzMIkECZooGc0Lrk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Management.Sdk.Sfc.dll" size="406552">
+      <assemblyIdentity name="Microsoft.SqlServer.Management.Sdk.Sfc" version="10.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0UAUGNCrvgf+TA9DdQW/I1GnTu6gTAg+rRLcJh6kayE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Smo.dll" size="2864152">
+      <assemblyIdentity name="Microsoft.SqlServer.Smo" version="10.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/rYkbMDItHqBcKFY4zSZbz+Ppnt9OoZy6M8/cqr/T2E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.SmoExtended.dll" size="185368">
+      <assemblyIdentity name="Microsoft.SqlServer.SmoExtended" version="10.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kUuTdA2v2jTHgunqt8QlXh6hK5ez6HGFpQ1A77QvRd0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuarkFit.exe" size="397280">
+      <assemblyIdentity name="QuarkFit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>W5StHZ7SQ84SA/x3E/AV05fewjlUe9igei63QJI7WPw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="QuarkFit.exe.config" size="545">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ibbTFo/YTTWIjh/QcaZXnU87bfdegUWXXC6KVxBtCoA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-DNMOPPA\aipom" issuerKeyHash="d63a3cfa9bba777e6eb26902f747f8d10f20c717" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>eoa6eIM+HhvxLc1KMkrEC4mltuEksW1IL3MIagW/kgA=</DigestValue></Reference></SignedInfo><SignatureValue>UUWJ60MSP/8P8mgKLO4CrPj0wWu0lZQfhgPt/7gVMFJLMCoWiFwnrLh0YoaaBUEGC87BfQTKbmiVeHRCP7E/J7iFckrBXmoSGAe3YVlh1JvVQ6qwf/Ksb46FY646lij8bFsoH/e0zGhYtDVXlchXW5fZCRgZUDpL0EU06f8FB6w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uiEdWEPyz06p21//OBRSXXcUKvKn2ebfIL5kVv1ZS/tVGGZU9xFlBb6vUOCJKcIRhsCHUx4VOap+E48J9PrJL20fenIO4qs9GRujg/xhBDgwC9d+LbI2adMUubQzJUAUyuJAv9yQHvvK+r7bmkI5y2TgdOx6yWva+Y1n1obo4Ak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0092bf056a08732f486db124e1b6a5890bc44a324acd2df11b1e3e8378ba867a" Description="" Url=""><as:assemblyIdentity name="QuarkFit.exe" version="1.0.0.0" publicKeyToken="169890dc1dd38335" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-DNMOPPA\aipom</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NEXBp5TVoWF1uCPv4geqAmS9jDe/GAm2AKI/ZFK5quk=</DigestValue></Reference></SignedInfo><SignatureValue>sVbIwshHfIInvrj0NdxuZr5PVjVI1tnGyRD5fN8fiarN/IXAvfI7QK5rTxjTIxLcnxxuR1eZ6bpM7GuUBODGchG1H1czf0PRY70yz//gwmGnhMndBdq1q2miVZ4Mpff/gQDTPZfYSmMiivRsqWVSvFUO3UZZr4YOOO7pLIM5LVc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uiEdWEPyz06p21//OBRSXXcUKvKn2ebfIL5kVv1ZS/tVGGZU9xFlBb6vUOCJKcIRhsCHUx4VOap+E48J9PrJL20fenIO4qs9GRujg/xhBDgwC9d+LbI2adMUubQzJUAUyuJAv9yQHvvK+r7bmkI5y2TgdOx6yWva+Y1n1obo4Ak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQSPNb9gvrsKxOMu682XMmizANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEQATgBNAE8AUABQAEEAXABhAGkAcABvAG0wHhcNMjEwNTAzMDMxMDQxWhcNMjIwNTAzMDkxMDQxWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEQATgBNAE8AUABQAEEAXABhAGkAcABvAG0wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALohHVhD8s9Oqdtf/zgUUl13FCryp9nm3yC+ZFb9WUv7VRhmVPcRZQW+r1DgiSnCEYbAh1MeFTmqfhOPCfT6yS9tH3pyDuKrPRkbo4P8YQQ4MAvXfi2yNmnTFLm0MyVAFMriQL/ckB77yvq+25pCOctk4HTseslr2vmNZ9aG6OAJAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAJ0DslrOwn9tsv3loszq5hf0cOueNG/U1bsWyl0/K4eFX2nXC9JEMG2w3IRSuFR+sHguJz2O/uJmRPIbtt4KbCPQXiGC5hOJ0squzEW9Fx7W/8Qrhdi0vF5nxKAM+w+chbJGuUK8iSh5upivKkZ+w88sqGVA6vuYnxjTV466DhJc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

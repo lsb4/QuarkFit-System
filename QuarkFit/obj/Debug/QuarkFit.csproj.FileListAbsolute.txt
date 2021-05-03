@@ -7,4 +7,14 @@ C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.csproj.Generate
 C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.csproj.CoreCompileInputs.cache
 C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.exe
 C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.pdb
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFit.exe.manifest
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFit.application
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.exe.manifest
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.application
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFitDB.mdf
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFitDB_log.ldf
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFitDBDataSet.Designer.cs
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFitDBDataSet.xsc
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFitDBDataSet.xsd
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFitDBDataSet.xss
 C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.csprojAssemblyReference.cache

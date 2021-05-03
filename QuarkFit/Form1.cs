@@ -15,7 +15,7 @@ namespace QuarkFit
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-DNMOPPA;Initial Catalog=Hakuna System;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QuarkFitDB.mdf;Integrated Security=True");
         public int userID;
 
         private void QuarkFit_Load(object sender, EventArgs e)
@@ -154,50 +154,57 @@ namespace QuarkFit
 
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
-            if (isOk())
+            if (userName.Text != "")
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO users VALUES (@userName, @userCpf, @userGoal, @userPlan, @userLimit, @userTime, @userContact, @userObservations, @userBirth)", con);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@userName", userName.Text);
-                cmd.Parameters.AddWithValue("@userCpf", userCpf.Text);
-                cmd.Parameters.AddWithValue("@userGoal", userGoal.Text);
-                cmd.Parameters.AddWithValue("@userPlan", userPlan.Text);
-                cmd.Parameters.AddWithValue("@userLimit", userLimit.Text);
-                cmd.Parameters.AddWithValue("@userTime", userTime.Text);
-                cmd.Parameters.AddWithValue("@userContact", userContact.Text);
-                cmd.Parameters.AddWithValue("@userObservations", userObservations.Text);
-                cmd.Parameters.AddWithValue("@userBirth", userBirth.Text);
+                if (userLimit.Text != "  /  /")
+                {
+                    if (userBirth.Text != "  /  /")
+                    {
+                        SqlCommand cmd = new SqlCommand("INSERT INTO users VALUES (@userName, @userCpf, @userGoal, @userPlan, @userLimit, @userTime, @userContact, @userObservations, @userBirth)", con);
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@userName", userName.Text);
+                        cmd.Parameters.AddWithValue("@userCpf", userCpf.Text);
+                        cmd.Parameters.AddWithValue("@userGoal", userGoal.Text);
+                        cmd.Parameters.AddWithValue("@userPlan", userPlan.Text);
+                        cmd.Parameters.AddWithValue("@userLimit", userLimit.Text);
+                        cmd.Parameters.AddWithValue("@userTime", userTime.Text);
+                        cmd.Parameters.AddWithValue("@userContact", userContact.Text);
+                        cmd.Parameters.AddWithValue("@userObservations", userObservations.Text);
+                        cmd.Parameters.AddWithValue("@userBirth", userBirth.Text);
 
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
 
-                MessageBox.Show("Novo aluno adicionado com sucesso!", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Novo aluno adicionado com sucesso!", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                GetUsersRecord();
-                GetBirthUsers();
+                        GetUsersRecord();
+                        GetBirthUsers();
 
-                userName.Clear();
-                userCpf.Clear();
-                userGoal.Text = "";
-                userPlan.Text = "";
-                userLimit.Clear();
-                userBirth.Clear();
-                userTime.Clear();
-                userContact.Clear();
-                userObservations.Clear();
+                        userName.Clear();
+                        userCpf.Clear();
+                        userGoal.Text = "";
+                        userPlan.Text = "";
+                        userLimit.Clear();
+                        userBirth.Clear();
+                        userTime.Clear();
+                        userContact.Clear();
+                        userObservations.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Data de Nascimento em branco...", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Data Limite em branco...", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-        }
-
-        private bool isOk()
-        {
-            if (userName.Text == String.Empty)
+            else
             {
                 MessageBox.Show("Nome do aluno em branco...", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
             }
-
-            return true;
         }
 
         private void birthsList_CellClick(object sender, DataGridViewCellEventArgs e)

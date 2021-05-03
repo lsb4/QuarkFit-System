@@ -33,5 +33,16 @@ namespace QuarkFit.Properties {
                 return ((string)(this["Hakuna_SystemConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\QuarkFitDB.md" +
+            "f;Integrated Security=True")]
+        public string con {
+            get {
+                return ((string)(this["con"]));
+            }
+        }
     }
 }

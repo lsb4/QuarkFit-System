@@ -15,32 +15,44 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_38C77F684CE9496590484E9B6AD90C60"
+        "MsmKey" = "8:_03D47E7CC97E4245AB3F063435585E73"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0DC47AF9C5BD49538578731EE64EAD42"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_5156AA26D3012184B9FFEAC9971AC9B1"
-        "OwnerKey" = "8:_AFA728B40456403489699AEA0CCC4C2B"
+        "OwnerKey" = "8:_D1D95BD956AA486CBF212CFE5BD0D915"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_AFA728B40456403489699AEA0CCC4C2B"
+        "MsmKey" = "8:_7B739234F5D64DD89904D58A3EBCDFDB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D1D95BD956AA486CBF212CFE5BD0D915"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AFA728B40456403489699AEA0CCC4C2B"
+        "OwnerKey" = "8:_5156AA26D3012184B9FFEAC9971AC9B1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5156AA26D3012184B9FFEAC9971AC9B1"
+        "OwnerKey" = "8:_D1D95BD956AA486CBF212CFE5BD0D915"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -72,8 +84,13 @@
                 {
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 e x64)"
                     "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.SqlServer.SqlLocalDB.15.0"
+                    {
+                    "Name" = "8:SQL Server 2019 Express LocalDB"
+                    "ProductCode" = "8:Microsoft.SqlServer.SqlLocalDB.15.0"
                     }
                 }
             }
@@ -138,10 +155,30 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_38C77F684CE9496590484E9B6AD90C60"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_03D47E7CC97E4245AB3F063435585E73"
             {
             "SourcePath" = "8:..\\..\\..\\..\\Downloads\\QuarkFit\\logo.ico"
             "TargetName" = "8:logo.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_0AA948B527BD434B860320BDFAEE94C5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0DC47AF9C5BD49538578731EE64EAD42"
+            {
+            "SourcePath" = "8:..\\QuarkFit\\bin\\Debug\\QuarkFitDB.mdf"
+            "TargetName" = "8:QuarkFitDB.mdf"
             "Tag" = "8:"
             "Folder" = "8:_B1269A8B7A5A4E108938A42630A528EC"
             "Condition" = "8:"
@@ -187,6 +224,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7B739234F5D64DD89904D58A3EBCDFDB"
+            {
+            "SourcePath" = "8:..\\QuarkFit\\bin\\Debug\\QuarkFitDB_log.ldf"
+            "TargetName" = "8:QuarkFitDB_log.ldf"
+            "Tag" = "8:"
+            "Folder" = "8:_B1269A8B7A5A4E108938A42630A528EC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -257,7 +314,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QuarkFit"
         "ProductCode" = "8:{C27CA65C-D22C-42FA-8D19-0CAD89BE186B}"
-        "PackageCode" = "8:{439C385C-D538-4317-AD08-941CC0912B26}"
+        "PackageCode" = "8:{69EBA793-20BE-48E0-9143-ECA57C05215D}"
         "UpgradeCode" = "8:{E9A97182-CA9C-44A2-8AA2-5A47EC2C8170}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -377,32 +434,32 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EC141B815A0344999FF5CB9CE23481AD"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_91EDA3E0D6DF47F5A7BAD51933671742"
             {
             "Name" = "8:QuarkFit"
             "Arguments" = "8:"
-            "Description" = "8:Sistema CRUD para Academias e Personal Trainers"
+            "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_AFA728B40456403489699AEA0CCC4C2B"
-            "Folder" = "8:_06EC97B59D8741D7AFC9353E500FA3CE"
-            "WorkingFolder" = "8:_B1269A8B7A5A4E108938A42630A528EC"
-            "Icon" = "8:_38C77F684CE9496590484E9B6AD90C60"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_FDA134C1224B438FBD87285D8C35759F"
-            {
-            "Name" = "8:QuarkFit"
-            "Arguments" = "8:"
-            "Description" = "8:Sistema CRUD para Academias e Personal Trainers"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_AFA728B40456403489699AEA0CCC4C2B"
+            "Target" = "8:_D1D95BD956AA486CBF212CFE5BD0D915"
             "Folder" = "8:_0AA948B527BD434B860320BDFAEE94C5"
             "WorkingFolder" = "8:_B1269A8B7A5A4E108938A42630A528EC"
-            "Icon" = "8:_38C77F684CE9496590484E9B6AD90C60"
+            "Icon" = "8:_03D47E7CC97E4245AB3F063435585E73"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B6127474B80D41D2AC4B33D5E2538EE6"
+            {
+            "Name" = "8:QuarkFit"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_D1D95BD956AA486CBF212CFE5BD0D915"
+            "Folder" = "8:_06EC97B59D8741D7AFC9353E500FA3CE"
+            "WorkingFolder" = "8:_B1269A8B7A5A4E108938A42630A528EC"
+            "Icon" = "8:_03D47E7CC97E4245AB3F063435585E73"
             "Feature" = "8:"
             }
         }
@@ -804,7 +861,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AFA728B40456403489699AEA0CCC4C2B"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D1D95BD956AA486CBF212CFE5BD0D915"
             {
             "SourcePath" = "8:..\\QuarkFit\\obj\\Debug\\QuarkFit.exe"
             "TargetName" = "8:"
