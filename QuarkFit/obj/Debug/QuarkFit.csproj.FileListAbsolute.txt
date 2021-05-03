@@ -1,0 +1,10 @@
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFit.exe.config
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFit.exe
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\bin\Debug\QuarkFit.pdb
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.QuarkFit.resources
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.Properties.Resources.resources
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.csproj.GenerateResource.cache
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.csproj.CoreCompileInputs.cache
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.exe
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.pdb
+C:\Users\aipom\source\repos\QuarkFit\QuarkFit\obj\Debug\QuarkFit.csprojAssemblyReference.cache
